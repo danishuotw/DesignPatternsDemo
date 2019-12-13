@@ -1,6 +1,6 @@
 ## Mediator Pattern
 
-Note
+#### Note
 The mediator pattern is a behavioral design pattern that encapsulates how objects communicate with one another. 
 
 <img src="./mediatorDiagram.png" width="50%" />
