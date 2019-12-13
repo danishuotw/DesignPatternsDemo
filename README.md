@@ -1,13 +1,13 @@
 ## Mediator Pattern
 
-### Note
+Note
 The mediator pattern is a behavioral design pattern that encapsulates how objects communicate with one another. 
 
 <img src="./mediatorDiagram.png" width="50%" />
 
 The airplanes are the objects that want to communicate with each other.
 
-### Mediator Protocol
+## Mediator Protocol
 The mediator protocol defines methods and properties that the mediator must
 implement.
 ``` swift
@@ -16,7 +16,7 @@ protocol Mediator {
 }
 ``` 
 
-### Implement Mediator
+## Implement Mediator
 The TowerMediator is the object that controls the communication of the airplanes. It implements the mediator protocol.
 ```swift 
 class TowerMediator: Mediator {
@@ -34,7 +34,7 @@ class TowerMediator: Mediator {
 }
 ``` 
 
-### Airplane Protocol
+## Airplane Protocol
 The Airplane protocol defines methods and properties that each colleague must implement.
 ```swift
 protocol Airplane {
@@ -44,7 +44,7 @@ protocol Airplane {
 }
 ```
 
-### Implement Airplane
+## Implement Airplane
 ```swift
 class Emirates: Airplane {
     var id: String
@@ -95,8 +95,8 @@ class EVA_Air: Airplane {
 }
 ``` 
 
-### Usage
-#### Quick Start
+## Usage
+### Quick Start
 ```swift
 // 1
 let mediator = TowerMediator()
